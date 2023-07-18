@@ -18,8 +18,11 @@ class _LViewSampleState extends State<LViewSample> {
       body: Column(
         children: [
           const Text(
-            "Classmates na Bulay", 
-            style: TextStyle(fontSize: 20,color: Colors.blue),
+            "Classmates na murag makapasar", 
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.blue
+            ),
           ),
           Expanded(
             child: ListView.builder(
@@ -30,7 +33,7 @@ class _LViewSampleState extends State<LViewSample> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 TextField(
@@ -57,14 +60,18 @@ class _LViewSampleState extends State<LViewSample> {
                   child: MaterialButton(
                     height: 50,
                     minWidth: 100,
-                    child: const Text("Add to list",style: TextStyle(color: Colors.white),),
                     color: Colors.blue,
                     onPressed:(){
                       setState(() {
                         listOfClassmates.add(_tfController.text);
                         _tfController.clear();
                       });
-                    }
+                    },
+                    child: const Text("Add to list",
+                      style:  TextStyle(
+                        color: Colors.white
+                        ),
+                      )
                   ),
                 ),
               

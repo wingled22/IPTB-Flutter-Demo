@@ -13,7 +13,7 @@ class ListViewItemDemo extends StatelessWidget {
               decoration: const BoxDecoration(color: Colors.amber),
               child: Center(
                 child: Text(
-                  this.gulay,
+                  gulay,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20

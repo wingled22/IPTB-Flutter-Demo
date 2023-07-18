@@ -13,13 +13,13 @@ class MyWidget extends StatelessWidget {
         print(nameOfCMate);
       },
       child: Padding(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: Container(
                 height: 100,
                 color: Colors.deepOrange,
                 child: Center(
                         child: Text(
-                            this.nameOfCMate,
+                            nameOfCMate,
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 20
