@@ -8,22 +8,27 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-            padding: EdgeInsets.all(8),
-            child: Container(
-              height: 100,
-              color: Colors.deepOrange,
-              child: Center(
-                      child: Text(
-                          this.nameOfCMate,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 20
-                          ),
-                        )
-                      ),
-                      
+    return GestureDetector(
+      onTap: (){
+        print(nameOfCMate);
+      },
+      child: Padding(
+              padding: EdgeInsets.all(8),
+              child: Container(
+                height: 100,
+                color: Colors.deepOrange,
+                child: Center(
+                        child: Text(
+                            this.nameOfCMate,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 20
+                            ),
+                          )
+                        ),
+                        
+              ),
             ),
-          );
+    );
   }
 }
