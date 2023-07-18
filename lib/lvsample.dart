@@ -10,14 +10,17 @@ class LViewSample extends StatefulWidget {
 
 class _LViewSampleState extends State<LViewSample> {
   final _tfController =  TextEditingController();
-  var listOfClassmates = ["kokks","rekmar"];
+  var listOfClassmates = [];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [
-          Text("Classmates na Bulay"),
+          const Text(
+            "Classmates na Bulay", 
+            style: TextStyle(fontSize: 20,color: Colors.blue),
+          ),
           Expanded(
             child: ListView.builder(
               itemCount: listOfClassmates.length,
