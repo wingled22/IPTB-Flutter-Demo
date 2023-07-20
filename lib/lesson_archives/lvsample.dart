@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_is_ez/listViewItem.dart';
+
+import 'listViewItem.dart';
 
 class LViewSample extends StatefulWidget {
   const LViewSample({super.key});

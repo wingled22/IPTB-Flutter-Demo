@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_is_ez/TextFieldDemo.dart';
-import 'package:flutter_is_ez/lvsample.dart';
+import 'package:flutter_is_ez/userinput.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const TFieldDemo(),
+      home: const Userinput(),
     );
   }
 }
